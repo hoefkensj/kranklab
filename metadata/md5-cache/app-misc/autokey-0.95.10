@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DEPEND=dev-python/dbus-python dev-python/pyinotify dev-python/python-xlib x11-misc/wmctrl dev-python/PyQt5 kde-apps/kdialog dev-python/pyqt-distutils dev-python/python-distutils-extra
+DESCRIPTION=AutoKey, a desktop automation utility for Linux and X11.
+EAPI=8
+HOMEPAGE=https://github.com/autokey/autokey
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=dev-python/dbus-python dev-python/pyinotify dev-python/python-xlib x11-misc/wmctrl dev-python/PyQt5 kde-apps/kdialog dev-python/pyqt-distutils dev-python/python-distutils-extra
+SLOT=0
+SRC_URI=https://github.com/autokey/autokey/archive/refs/tags/v0.95.10.tar.gz
+_md5_=8d224ccb909c3de76322903bd30f1a69

@@ -1,0 +1,27 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 5e63657..c675646 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -22,7 +22,7 @@ natord = "1.0.9"
+ # egui stuff
+ eframe = { version = "0.16.0", features = ["persistence"] }
+ egui = "0.16.0"
+-egui_nodes = {git = "https://github.com/Ax9D/egui_nodes", rev="584047e"}
++egui_nodes = { path = "egui_nodes" }
+ serde = { version = "1", features = ["derive"] }
+
+ [profile.release]
+diff --git a/Cargo.toml b/Cargo.toml
+index 566a5c6..079f6d1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -14,3 +14,9 @@ derivative = "2.1.3"
+ 
+ [dev-dependencies]
+ eframe = "0.16.0"
++
++[source.crates-io]
++replace-with = "vendored-sources"
++
++[source.vendored-sources]
++directory = "/var/tmp/portage/dev-lang/egui-nodes-9999/work/cargo_home/gentoo"

@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 5e63657..c675646 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -22,7 +22,7 @@ natord = "1.0.9"
+ # egui stuff
+ eframe = { version = "0.16.0", features = ["persistence"] }
+ egui = "0.16.0"
+-egui_nodes = {git = "https://github.com/Ax9D/egui_nodes", rev="584047e"}
++egui_nodes = { path = "egui_nodes" }
+ serde = { version = "1", features = ["derive"] }
+
+ [profile.release]
